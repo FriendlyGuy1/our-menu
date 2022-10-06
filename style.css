@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.patrick {
+    font-family: 'Patrick Hand', cursive;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.main {
+    height: 85%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    font-size: 40px;
+}
+
+.chicken h3{
+    text-align: center;
+    float: right;
+    width: 30%;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    background-color: rgb(202, 140, 150);
+}
+
+.chicken {
+    background-color: rgb(167, 161, 161);
+    border: 2px solid black;
+    height: 30%;
+    overflow: hidden;
+    margin: 30px;
+}
+
+p {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.beef {
+    background-color: rgb(167, 161, 161);
+    border: 2px solid black;
+    height: 30%;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.beef h3 {
+    text-align: center;
+    color: white;
+    float: right;
+    width: 30%;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    background-color: rgb(133, 13, 13);
+}
+
+.sushi {
+    background-color: rgb(167, 161, 161);
+    border: 2px solid black;
+    height: 30%;
+    overflow: hidden;
+    margin: 30px;
+}
+
+
+.sushi h3 {
+    text-align: center;
+    float: right;
+    width: 30%;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    background-color: rgb(219, 219, 115);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .chicken {
+        width: 47%;
+        height: 44%;
+        margin: 10px;
+    }
+
+    .beef {
+        width: 47%;
+        height: 44%;
+        margin: 10px;
+    }
+    .sushi {
+        margin: 10px;
+        width: 100%;
+        height: 50%;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    
+    .chicken, .beef, .sushi {
+        width: 30%;
+        height: 30%;
+    }
+    
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
